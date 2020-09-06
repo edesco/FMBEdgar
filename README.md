@@ -23,7 +23,7 @@ From the root directory of the project in cmd console:
 If you want deploy again the contracts and rewrite the existent contracts in Ganache:
 - truffle migrate --reset --compile-all
 If all is right you will see
-    Summary
+
     =======
     > Total deployments:   2
     > Final cost:          0.01188916 ETH
