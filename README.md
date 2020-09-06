@@ -7,13 +7,16 @@ Prerequisites
 - Node.js
 - Ganache-CLI (last release)
 - Truffle
+
 In this link there is a tutorial to install the previeous package and programs and how connect Ganache with Truffle. They also show how setup Ganache.
 https://www.codeooze.com/blockchain/ethereum-dev-environment-2019/
-The
+
 - Web3
 - Metamask (Chrome Extension)
+
 In this link there is a tutorial to install the previeous extension and how connect with Ganache through Web3. They also show how setup Metamask.
 https://www.trufflesuite.com/docs/truffle/getting-started/truffle-with-metamask
+
 The host and port in Ganache must be the same that theconfiguration in truffle-config.js in root directory of the project
 When all packache have been installed you can deploy the smart contract (files.sol) in the Contracts directory to Ganache.
 From the root directory of the project in cmd console:
