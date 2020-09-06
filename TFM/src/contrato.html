@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tratos 2</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Trato 2</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+    <div class="text-center" id="def"></div>
+    <div class="text-center" id="acceptS1"></div>
+    <div class="text-center" id="acceptS2"></div>
+    <div class="text-center" id="fechaAcuerdo"></div>
+    <div class="text-center" id="fechaDesacuerdo"></div>
+    <div class="text-center" id="hayAcuerdo"></div>
+    <div class="text-center" id="vistoS1"></div>
+    <div class="text-center" id="vistoS2"></div>
+    <div class="text-center" id="S1"></div>
+    <div class="text-center" id="S2"></div>
+
+    Cuenta S1: <input class="cuentaS1" type="text" name="cuentaS1" id="cuentaS1"><br>
+    Cuenta S2: <input class="cuentaS2" type="text" name="cuentaS2" id="cuentaS2"><br>
+    <button class="btn btn-default btn-crearContrato" type="button" data-id="btnCrearContrato" >Crear</button><br>
+    Dirección de su contrato: <div class="text-center" id="dirContratoDevuelta"></div>
+
+    <br>
+    <br>
+
+    Direccion contrato: <input class="contrato" type="text" name="contrato" id="contrato">
+    <button class="btn btn-default btn-getContract" type="button" data-id="btnGetContract" >Seleccionar contrato</button>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

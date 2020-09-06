@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tratos</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Trato</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+    CREACION DE CONTRATO<br>
+    Cuenta S1: <input class="cuentaS1" type="text" name="cuentaS1" id="cuentaS1"><br>
+    Cuenta S2: <input class="cuentaS2" type="text" name="cuentaS2" id="cuentaS2"><br>
+    <button class="btn btn-default btn-crearContrato" type="button" data-id="btnCrearContrato" >Crear contrato</button>
+    <button class="btn btn-default btn-getLastContract" type="button" data-id="btnGetLastContract" >Direccion contrato creado</button><br>
+    Dirección de su contrato: <div class="text-center" id="dirContratoDevuelta"></div>
+
+    <br>
+    <br>
+
+    REGISTRO VALIDADORES Y ARBITROS<br>
+    Ganancia Max: <input class="gMax" type="text" name="gMax" id="gMax"><br>
+    Ganancia Min: <input class="gMin" type="text" name="gMin" id="gMin"><br>
+    Deposito principal: <input class="dp1" type="text" name="dp1" id="dp1"><br>
+    Deposito secundario (mediadores): <input class="dp2" type="text" name="dp2" id="dp2"><br>
+    <button class="btn btn-default btn-regVal" type="button" data-id="btnregVal" >Registrar Validador</button>
+    <button class="btn btn-default btn-regMed" type="button" data-id="btnregMed" >Registrar Mediador</button>
+    <br>
+
+    <br>
+    <br>
+
+    SELECCIONAR CONTRATO<br>
+    Direccion contrato: <input class="contrato" type="text" name="contrato" id="contrato">
+    <button class="btn btn-default btn-getContract" type="button" data-id="btnGetContract" >Seleccionar contrato</button>
+    <br>
+    INFORMACION DEL ACUERDO
+    <br>
+    1. Participantes
+    <br>
+    <div class="text-center" id="participants"></div>
+    ----------------------
+    2. Validadores y mediadores
+    <br>
+    <div class="text-center" id="acceptsParticipants"></div>
+    ----------------------
+    3. Custodia
+    <br>
+    <div class="text-center" id="custodia1"></div>
+    ----------------------
+    4. Manutencion
+    <br>
+    <div class="text-center" id="manutencion1"></div>
+    ----------------------
+    5. Propiedad
+    <br>
+    <div class="text-center" id="propiedad1"></div>
+    ----------------------
+
+    <br>
+    <br>
+
+    ACEPTACION/PROPUESTA DE PARTICIPANTES<br>
+    Nº Validadores: <input class="nVal" type="text" name="nVal" id="nVal"><br>
+    Nº mediadores: <input class="nMed" type="text" name="nMed" id="nMed"><br>
+    Honorarios validadores: <input class="hVal" type="text" name="hVal" id="hVal"><br>
+    Honorarios mediadores: <input class="hMed" type="text" name="hMed" id="hMed"><br> 
+    <button class="btn btn-default btn-aceptVals" type="button" data-id="btnAceptVals" >Aceptar validadores</button>
+    <button class="btn btn-default btn-propVals" type="button" data-id="btnPropVals" >Proponer validadores</button>
+
+    <br>
+    <br>
+    
+    ACEPTACION/PROPUESTA DE LA CUSTODIA<br>
+    Custodia: <input class="custodia" type="text" name="custodia" id="custodia">
+    <button class="btn btn-default btn-acceptCustodia" type="button" data-id="btnacceptCustodia" >Aceptar custodia</button>
+    <button class="btn btn-default btn-propCustodia" type="button" data-id="btnpropCustodia" >Proponer custodia</button>
+
+    <br>
+    <br>
+    
+    ACEPTACION/PROPUESTA DE LA MANUTENCION<br>
+    Manutencion: <input class="manutencion" type="text" name="manutencion" id="manutencion"><br>
+    Periodicidad: <input class="periodMan" type="text" name="periodMan" id="periodMan"><br>
+    Beneficiario: <input class="benefMan" type="text" name="benefMan" id="benefMan"><br>
+    <button class="btn btn-default btn-acceptMan" type="button" data-id="btnacceptMan" >Aceptar manutencion</button>
+    <button class="btn btn-default btn-propMan" type="button" data-id="btnpropMan" >Proponer manutencion</button>
+
+    <br>
+    <br>
+    
+    ACEPTACION/PROPUESTA DE LA PROPIEDAD<br>
+    Propiedad: <input class="propiedad" type="text" name="propiedad" id="propiedad"><br>
+    Periodicidad: <input class="periodProp" type="text" name="periodProp" id="periodProp"><br>
+    Beneficiario: <input class="benefProp" type="text" name="benefProp" id="benefProp"><br>
+    <button class="btn btn-default btn-acceptProp" type="button" data-id="btnacceptProp" >Aceptar propiedad</button>
+    <button class="btn btn-default btn-propProp" type="button" data-id="btnpropProp" >Proponer propiedad</button>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
